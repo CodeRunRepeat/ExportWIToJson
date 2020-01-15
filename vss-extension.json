@@ -1,0 +1,43 @@
+{
+    "manifestVersion": 1,
+    "id": "export-wi-to-json",
+    "publisher": "CodeRunRepeat",
+    "version": "0.1.0",
+    "name": "Export selected work items to JSON",
+    "description": "An extension that exports work items to JSON format",
+    "public": false,
+    "categories": ["Azure Boards"],
+    "scopes": ["vso.work"],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default": "images/icon.png"
+    },
+    "files": [
+        { "path": "images", "addressable": true },   
+        { "path": "scripts", "addressable": true }, 
+        { "path": "main.html", "addressable": true },
+        { "path": "node_modules/vss-web-extension-sdk/lib", "addressable": true }
+    ],
+    "contributions": [
+        {
+            "id": "export_wi_to_json_list_menu",
+            "type": "ms.vss-web.action",
+            "description": "An extension that exports work items to JSON format",
+            "targets": [
+                "ms.vss-work-web.work-item-query-results-toolbar-menu"
+            ],
+            "properties": {
+                "text": "Export selected to JSON",
+                "title": "Export selected work items to JSON format",
+                "icon": "images/menu_icon.png",
+                "group": "actions",
+                "uri": "main.html",
+                "registeredObjectId": "exportToJson"
+            }
+        }
+    ]
+}

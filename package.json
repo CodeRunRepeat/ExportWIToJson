@@ -1,0 +1,9 @@
+{
+  "name": "export-wi-to-json",
+  "version": "1.0.0",
+  "description": "",
+  "author": "CodeRunRepeat",
+  "dependencies": {
+    "vss-web-extension-sdk": "^2.109.0"
+  }
+}
