@@ -3,10 +3,12 @@
 This Azure DevOps extension adds a new menu item to the context menu in queries that exports
 selected work items to JSON format.
 
+![Screenshot](docs/menu_screenshot.png)
 
-# How to build and install
+## How to build and install
+
 * If you don't already have a publisher for the Azure DevOps Marketplace set up, [create a publisher](https://docs.microsoft.com/en-us/azure/devops/extend/get-started/node?view=azure-devops#package-and-publish-your-extension).
-* Install prerequisites listed in https://docs.microsoft.com/en-us/azure/devops/extend/get-started/node?view=azure-devops
+* Install prerequisites listed [here](https://docs.microsoft.com/en-us/azure/devops/extend/get-started/node?view=azure-devops)
   (Node.js and the extension packaging tool)
 * Clone the repo
 * Edit vss-extension.json and change `publisher` to your own publisher ID
